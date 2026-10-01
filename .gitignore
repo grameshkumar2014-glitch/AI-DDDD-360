@@ -1,0 +1,80 @@
+# ============================================================
+# AI DDDD 360™ — Git Ignore Policy
+# ============================================================
+
+# Python cache / compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter / Colab transient files
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Environment / secrets
+.env
+.env.*
+!.env.template
+*.secret
+*.secrets
+
+# Credentials / authentication
+credentials.json
+service-account.json
+token.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local databases / transient stores
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and runtime output
+*.log
+logs/
+runtime_logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Python packaging / build artifacts
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+
+# Local tooling caches
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# ============================================================
+# AI DDDD 360™ — Explicitly retained project artifacts
+# ============================================================
+# Scientific specifications, validation results, source code,
+# ontology/KG artifacts, reproducibility records, and Master
+# Control files remain version-controlled unless explicitly
+# excluded by this policy.
+#
+# Master Control backup files are intentionally excluded from
+# the repository; the authoritative Master Control is retained.
+AI_DDDD_360_MASTER_CONTROL.md.step*_preclosure_backup
+AI_DDDD_360_MASTER_CONTROL.md.step*_parkinson_alignment_backup
+AI_DDDD_360_MASTER_CONTROL.md.step*_backup
+
+AI_DDDD_360_MASTER_CONTROL.md.step8_parkinson_alignment_backup_v2
+AI_DDDD_360_MASTER_CONTROL.md.step8_preclosure_backup_v2

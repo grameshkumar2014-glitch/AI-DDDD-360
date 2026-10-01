@@ -1,0 +1,15 @@
+{
+  "checks_failed": 0,
+  "checks_passed": 27,
+  "checks_total": 27,
+  "evidence_levels_tested": [
+    "E1",
+    "E2",
+    "E3",
+    "E6"
+  ],
+  "retrieval_output_sha256": "069c9d61f38544112a027f7238738193db7f1879fc5e4dcd651f4b963a93daa9",
+  "status": "PASS",
+  "step": "6.9",
+  "validated_utc": "2026-10-01T02:26:47.928704+00:00"
+}

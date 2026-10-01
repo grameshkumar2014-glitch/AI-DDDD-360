@@ -332,7 +332,7 @@ Before wet-lab investment:
 
 - Step 18 — LangSmith evaluation
 - Step 19 — Historical benchmarking
-- Step 20 — Alzheimer validation
+- Step 20 — Parkinson's role-model validation
 - Step 21 — Cross-disease validation
 - Step 22 — Prospective validation
 
@@ -394,11 +394,11 @@ The system must:
 
 ---
 
-# 13. ALZHEIMER'S VALIDATION
+# 13. PARKINSON'S ROLE-MODEL VALIDATION
 
-Alzheimer's disease is the first validation case.
+Parkinson's disease is the role-model validation case for AI DDDD 360™.
 
-It is NOT the architectural limitation of the platform.
+Parkinson's disease is used as the role-model disease to validate the complete AI DDDD 360™ architecture. The platform itself remains disease-agnostic.
 
 The underlying system must remain disease-agnostic.
 
@@ -406,18 +406,19 @@ The underlying system must remain disease-agnostic.
 
 # 14. CROSS-DISEASE VALIDATION
 
-After Alzheimer's validation, the architecture must be tested on an independent disease.
+After Parkinson's role-model validation, the architecture must be tested on an independent disease.
 
-The second disease must be selected to test whether the framework generalizes beyond Alzheimer's disease.
+The independent disease must be selected to test whether the framework generalizes beyond Parkinson's disease.
 
 ---
 
 # 15. MASTER STATUS
 
-Current Step: 5.0
+Current Step: 9.0
 Current Status: IN PROGRESS
 
 Completed:
+- Step 7 — Ontology
 
 - Step 1.1 — New Colab environment
 - Step 1.2 — Google Drive mounted
@@ -432,7 +433,7 @@ Completed:
 
 Next:
 
-- Step 4 — Evidence model
+- Step 9 — Core Agents
 
 ---
 
@@ -518,3 +519,92 @@ Created during Step 1.7.
 - Dependencies: Step 4 closure requirements satisfied; Step 3 closure requirements satisfied; no unresolved blocking dependency identified.
 - Validation requirement: Step 4 closure must be re-verifiable from the Evidence Model Scope, saved validation evidence, and associated project artifacts.
 
+---
+
+## Controlled Step 5 Closure Record
+
+**Step:** Step 5 — Data Ingestion  
+**Status:** FORMALLY COMPLETED  
+**Closure Validation:** Step 5.62 — 40/40 PASS, 0 FAIL  
+**Closure Date:** 2026-10-01 02:06:39
+
+### Change
+Step 5 — Data Ingestion is formally closed and the project advances to Step 6 — RAG.
+
+### Reason
+Step 5 closure-readiness validation passed all 40 checks with zero failures.
+
+### Validated Components
+- Data ingestion scope artifact
+- Controlled local ingestion module
+- Evidence-level preservation E0–E7
+- Evidence provenance preservation
+- Source provenance
+- Temporal cutoff
+- Interpretation and limitations
+- SHA-256 integrity
+- Reproducibility metadata
+- Scientific-safety boundaries
+- Standard-library dependency integrity
+- Step 3 dependency integrity
+- Step 4 dependency integrity
+- Required project artifacts
+- Master Control integrity
+
+### Impact
+Step 6 — RAG may now begin.
+
+### Dependencies
+Step 3 — Scientific Data Model: COMPLETED  
+Step 4 — Evidence Model: COMPLETED  
+Step 5 — Data Ingestion: COMPLETED
+
+### Validation Requirement
+Step 5.62:
+**40 checks — 40 PASS — 0 FAIL**
+
+### Closure Rule
+No unresolved blocking dependency was identified at Step 5 closure.
+
+### Next Step
+**Step 6 — RAG**
+
+## Controlled Step 6 Closure Record
+
+- Closure Date (UTC): 2026-10-01T03:15:08.190238+00:00
+- Step: Step 6 — RAG
+- Closure Status: FORMALLY COMPLETED
+- Closure Readiness: 43/43 PASS
+- Step 6.4 Validation: 94/94 PASS
+- Step 6.10 End-to-End Validation: 37/37 PASS
+- Step 6.11 Closure-Readiness: 43/43 PASS
+- RAG Engine SHA-256: 6d3d3516c70d79062c2ebbdc85ef532bd377a4088eb79461f615594d1177a577
+- Retrieval Model SHA-256: 5c306ee81faa41e62bea6f9a9c0c949482090ca6b05a8bf4738a1b0e90c528bd
+- Scientific Safety: PASS
+- External Vector Dependency Check: PASS
+- Reproducibility: PASS
+- Evidence Provenance: PASS
+- Human Oversight: PASS
+- Change: Step 6 — RAG is formally closed and the project advances to Step 7 — Ontology.
+- Reason: Step 6 closure-readiness validation passed all 43 checks with zero failures.
+- Impact: Step 7 — Ontology may now begin.
+- Dependencies: Step 3 — Scientific Data Model, Step 4 — Evidence Model, and Step 5 — Data Ingestion are completed; Step 6 — RAG is now completed.
+- Validation Requirement: Step 7 must independently verify all inherited dependencies before implementation.
+- Next Step: Step 7 — Ontology.
+
+
+## Controlled Step 8 Closure
+
+- Date: 2026-10-01T04:00:52.280013+00:00
+- Change: Step 8 — Knowledge Graph marked COMPLETED; Current Step advanced from 8.0 to 9.0.
+- Reason: Step 8.1 Knowledge Graph Foundation, Step 8.2 Knowledge Graph Implementation, and Step 8.3A Parkinson's Role-Model Validation Alignment passed all required controlled validations.
+- Primary Validation Disease: Parkinson's Disease.
+- Validation Role: Parkinson's Disease is the role-model validation case for AI DDDD 360™.
+- Architecture: Disease-Agnostic.
+- Alzheimer Validation Track: Not used for AI DDDD 360™.
+- Impact: Step 8 is formally closed; Step 9 — Core Agents may begin.
+- Dependencies: Steps 1–7 completed; Step 8 controlled validation requirements satisfied.
+- Step 8.1: 29/29 PASS.
+- Step 8.2: 33/33 PASS.
+- Step 8.3A: 11/11 PASS.
+- Ontology Registry SHA-256: 2a51e495a899fe6abc93c17e603af419de0bf8223aab8c1d2a527c003f2cd882.

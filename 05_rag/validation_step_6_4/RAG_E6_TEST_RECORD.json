@@ -1,0 +1,36 @@
+{
+  "computational_prediction_is_clinical_evidence": false,
+  "conflicting_evidence": [
+    "RAG-E6-CONFLICT-001"
+  ],
+  "context_version": "test-context-6.4",
+  "evaluation_dataset": "STEP_6_4_TEST_DATASET",
+  "evidence_level": "E6",
+  "evidence_vs_inference": "Evidence level preserved; interpretation is not equivalent to evidence.",
+  "experiment_id": "EXP-E6-001",
+  "git_commit": "STEP6-4-TEST",
+  "human_oversight_required": true,
+  "hypothesis_vs_demonstrated_effect": "Retrieved information does not establish a demonstrated therapeutic effect.",
+  "interpretation": "Clinical-trial evidence relevant to the scientific question.",
+  "limitations": "Clinical evidence remains specific to the studied intervention and population.",
+  "model_version": "test-model-6.4",
+  "project": "AI DDDD 360",
+  "project_version": "0.1.0",
+  "prompt_version": "test-prompt-6.4",
+  "random_seed": 42,
+  "record_id": "RAG-E6-001",
+  "record_type": "rag_retrieval_record",
+  "results_reference": "/content/drive/MyDrive/AI-DDDD-360/05_rag/validation_step_6_4/STEP_6_4_VALIDATION_RESULTS.json",
+  "retrieval_query": "Parkinson disease target evidence",
+  "retrieval_timestamp_utc": "2026-10-01T02:09:55.199551+00:00",
+  "retrieved_content_reference": "content://RAG-E6-001",
+  "source_identifier": "RAG-E6-001",
+  "source_reference": "TEST-SOURCE-E6",
+  "source_sha256": "d277d304edea45a5444bcf77027d09daeb33c6ef3214838ce6b613e18f1094d3",
+  "supporting_evidence": [
+    "RAG-E6-SUPPORT-001"
+  ],
+  "temporal_cutoff": "2026-09-30",
+  "therapeutic_conclusion_from_retrieval_alone": false,
+  "uncertainty": "Uncertainty remains regarding generalization."
+}

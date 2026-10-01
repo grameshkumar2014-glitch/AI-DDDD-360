@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "no_duplicate_relationship_types": true,
+    "registry_exists": true,
+    "relationship_count_matches_list": true,
+    "relationship_types_match_authoritative_model": true,
+    "source_model_exists": true,
+    "valid_json": true
+  },
+  "checks_passed": 6,
+  "checks_total": 6,
+  "registry": "/content/drive/MyDrive/AI-DDDD-360/06_ontology/ONTOLOGY_REGISTRY.json",
+  "registry_sha256": "2a51e495a899fe6abc93c17e603af419de0bf8223aab8c1d2a527c003f2cd882",
+  "registry_size_bytes": 6698,
+  "relationship_type_count": 20,
+  "relationship_types": [
+    "associated_with",
+    "expressed_in",
+    "located_in",
+    "participates_in",
+    "regulates",
+    "targets",
+    "binds",
+    "engages",
+    "modulates",
+    "produces_response",
+    "associated_with_disease",
+    "supported_by",
+    "contradicted_by",
+    "derived_from",
+    "observed_in",
+    "tested_in",
+    "has_biomarker",
+    "stratified_by",
+    "has_uncertainty",
+    "has_biology_deficit"
+  ],
+  "source_model": "/content/drive/MyDrive/AI-DDDD-360/06_ontology/ONTOLOGY_ENTITY_RELATIONSHIP_MODEL.md",
+  "status": "PASS",
+  "step": "7.6D"
+}

@@ -1,0 +1,27 @@
+{
+  "artifact": "/content/drive/MyDrive/AI-DDDD-360/06_ontology/ONTOLOGY_REGISTRY.json",
+  "checks": {
+    "E1_E6_safety_rule": true,
+    "bbe_bd_present": true,
+    "binding_not_efficacy": true,
+    "entity_attributes_present": true,
+    "entity_type_count_27": true,
+    "evidence_levels_E0_E7": true,
+    "no_external_imports": true,
+    "no_knowledge_graph": true,
+    "no_reasoning_engine": true,
+    "registry_exists": true,
+    "relationship_attributes_present": true,
+    "relationship_type_count_21": false,
+    "reproducibility_present": true,
+    "safety_constraints_present": true,
+    "scope_boundary_present": true,
+    "valid_json": true
+  },
+  "checks_passed": 15,
+  "checks_total": 16,
+  "sha256": "00fa3ccd0368ffee1c832b29d6c0e920790127d96ed61be4c3e43d7e1a0487bc",
+  "size_bytes": 6643,
+  "status": "FAIL",
+  "step": "7.6"
+}

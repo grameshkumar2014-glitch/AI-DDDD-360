@@ -1,0 +1,19 @@
+{
+  "api_selected": false,
+  "component": "RAG",
+  "contradiction_preservation": true,
+  "created_utc": "2026-10-01T02:08:17.606788+00:00",
+  "e1_e6_safety_rule": true,
+  "embedding_model_selected": false,
+  "evidence_hierarchy": "E0-E7",
+  "external_database_selected": false,
+  "human_oversight_required": true,
+  "project": "AI DDDD 360",
+  "provenance_preservation": true,
+  "retrieval_algorithm_selected": false,
+  "status": "FOUNDATION_CREATED",
+  "step": "6.0",
+  "uncertainty_preservation": true,
+  "vector_database_selected": false,
+  "version": "0.1.0"
+}
