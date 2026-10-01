@@ -1,0 +1,177 @@
+{
+  "artifact": "STEP_11_4_LANGGRAPH_NODE_ADAPTER_RESULTS",
+  "project": "AI DDDD 360",
+  "step": "11.4",
+  "status": "PASS",
+  "validation_correction": {
+    "initial_fixture_field": "scientific_question",
+    "actual_required_field": "biological_question",
+    "adapter_modified": false,
+    "validator_fixture_corrected": true
+  },
+  "adapter_sha256": "f6b30812b80909b60048237e7de7ddf2a9f772ea9731f331fe58e9a586d32c74",
+  "node_specification_sha256": "3495b330ee8afde1133ade405682f3da8761256e81fc0eeb9c28a4f718b67291",
+  "agent_count": 8,
+  "node_count": 8,
+  "runnable_lambda_count": 8,
+  "controlled_node_validations": 8,
+  "controlled_runnable_validations": 8,
+  "evidence_level": "E0",
+  "structured_input": true,
+  "structured_output": true,
+  "state_transition": true,
+  "execution_trace": true,
+  "human_review_required": true,
+  "llm_execution": false,
+  "external_network": false,
+  "external_api": false,
+  "graph_compilation": false,
+  "graph_execution": false,
+  "therapeutic_recommendation": false,
+  "clinical_recommendation": false,
+  "autonomous_wet_lab_decision": false,
+  "substantive_biological_reasoning": false,
+  "agent_implementations_modified": false,
+  "parkinson_role_model": true,
+  "alzheimer_validation": false,
+  "node_records": [
+    {
+      "agent_name": "Disease Biology Agent",
+      "adapter_invocation": true,
+      "structured_output": true,
+      "evidence_level": "E0",
+      "human_review_required": true,
+      "parkinson_role_model": true,
+      "alzheimer_validation": false
+    },
+    {
+      "agent_name": "Target Intelligence Agent",
+      "adapter_invocation": true,
+      "structured_output": true,
+      "evidence_level": "E0",
+      "human_review_required": true,
+      "parkinson_role_model": true,
+      "alzheimer_validation": false
+    },
+    {
+      "agent_name": "Multi-Omics & Bimodality Agent",
+      "adapter_invocation": true,
+      "structured_output": true,
+      "evidence_level": "E0",
+      "human_review_required": true,
+      "parkinson_role_model": true,
+      "alzheimer_validation": false
+    },
+    {
+      "agent_name": "Structure & Binding Agent",
+      "adapter_invocation": true,
+      "structured_output": true,
+      "evidence_level": "E0",
+      "human_review_required": true,
+      "parkinson_role_model": true,
+      "alzheimer_validation": false
+    },
+    {
+      "agent_name": "Efficacy & Translational Agent",
+      "adapter_invocation": true,
+      "structured_output": true,
+      "evidence_level": "E0",
+      "human_review_required": true,
+      "parkinson_role_model": true,
+      "alzheimer_validation": false
+    },
+    {
+      "agent_name": "ADMET & Safety Agent",
+      "adapter_invocation": true,
+      "structured_output": true,
+      "evidence_level": "E0",
+      "human_review_required": true,
+      "parkinson_role_model": true,
+      "alzheimer_validation": false
+    },
+    {
+      "agent_name": "Clinical Intelligence Agent",
+      "adapter_invocation": true,
+      "structured_output": true,
+      "evidence_level": "E0",
+      "human_review_required": true,
+      "parkinson_role_model": true,
+      "alzheimer_validation": false
+    },
+    {
+      "agent_name": "Biology Deficit Agent",
+      "adapter_invocation": true,
+      "structured_output": true,
+      "evidence_level": "E0",
+      "human_review_required": true,
+      "parkinson_role_model": true,
+      "alzheimer_validation": false
+    }
+  ],
+  "runnable_records": [
+    {
+      "agent_name": "Disease Biology Agent",
+      "runnable_type": "RunnableLambda",
+      "structured_output": true,
+      "evidence_level": "E0"
+    },
+    {
+      "agent_name": "Target Intelligence Agent",
+      "runnable_type": "RunnableLambda",
+      "structured_output": true,
+      "evidence_level": "E0"
+    },
+    {
+      "agent_name": "Multi-Omics & Bimodality Agent",
+      "runnable_type": "RunnableLambda",
+      "structured_output": true,
+      "evidence_level": "E0"
+    },
+    {
+      "agent_name": "Structure & Binding Agent",
+      "runnable_type": "RunnableLambda",
+      "structured_output": true,
+      "evidence_level": "E0"
+    },
+    {
+      "agent_name": "Efficacy & Translational Agent",
+      "runnable_type": "RunnableLambda",
+      "structured_output": true,
+      "evidence_level": "E0"
+    },
+    {
+      "agent_name": "ADMET & Safety Agent",
+      "runnable_type": "RunnableLambda",
+      "structured_output": true,
+      "evidence_level": "E0"
+    },
+    {
+      "agent_name": "Clinical Intelligence Agent",
+      "runnable_type": "RunnableLambda",
+      "structured_output": true,
+      "evidence_level": "E0"
+    },
+    {
+      "agent_name": "Biology Deficit Agent",
+      "runnable_type": "RunnableLambda",
+      "structured_output": true,
+      "evidence_level": "E0"
+    }
+  ],
+  "safety_boundary": {
+    "llm_execution": false,
+    "external_network": false,
+    "external_api": false,
+    "graph_compilation": false,
+    "graph_execution": false,
+    "therapeutic_recommendation": false,
+    "clinical_recommendation": false,
+    "autonomous_wet_lab_decision": false,
+    "substantive_biological_reasoning": false,
+    "agent_implementations_modified": false,
+    "human_review_required": true,
+    "parkinson_role_model": true,
+    "alzheimer_validation": false
+  },
+  "timestamp_utc": "2026-10-01T10:38:32.881886+00:00"
+}
