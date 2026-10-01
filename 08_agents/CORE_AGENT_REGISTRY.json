@@ -1,0 +1,496 @@
+{
+  "registry_id": "AI-DDDD-360-CORE-AGENT-REGISTRY",
+  "registry_version": "0.1.0",
+  "created_utc": "2026-10-01T05:22:37.969876+00:00",
+  "platform": "AI DDDD 360™",
+  "architecture": {
+    "disease_agnostic": true,
+    "role_model_validation": "Parkinson’s Disease",
+    "alzheimer_validation": false,
+    "architecture_scope": "Universal AI DDDD 360™"
+  },
+  "foundation_specification": {
+    "path": "/content/drive/MyDrive/AI-DDDD-360/08_agents/CORE_AGENT_FOUNDATION_SPECIFICATION.md",
+    "sha256": "068ca67376c16c39d13f8f470ae7b7163549c3c025de58ebfc8d43daff877c25"
+  },
+  "common_contract": {
+    "required_fields": [
+      "agent_id",
+      "agent_name",
+      "agent_version",
+      "purpose",
+      "scope",
+      "primary_inputs",
+      "required_evidence",
+      "outputs",
+      "evidence_levels",
+      "supporting_evidence",
+      "conflicting_evidence",
+      "evidence_vs_inference",
+      "hypothesis_vs_demonstrated_effect",
+      "uncertainty",
+      "limitations",
+      "provenance",
+      "human_oversight",
+      "reproducibility_metadata"
+    ],
+    "evidence_levels": [
+      "E0",
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7"
+    ],
+    "principles": [
+      "Never silently equate E1 with E6",
+      "Binding does not equal efficacy",
+      "Preserve conflicting evidence",
+      "Preserve uncertainty",
+      "Separate evidence from inference",
+      "Separate hypothesis from demonstrated effect",
+      "Preserve provenance",
+      "Require human oversight for consequential interpretation"
+    ]
+  },
+  "interfaces": {
+    "rag": {
+      "required": true,
+      "purpose": "Evidence retrieval and provenance support",
+      "must_preserve": [
+        "source_reference",
+        "retrieval_provenance",
+        "evidence_level",
+        "temporal_context",
+        "limitations",
+        "uncertainty"
+      ]
+    },
+    "ontology": {
+      "required": true,
+      "purpose": "Controlled entity and relationship terminology",
+      "registry": "06_ontology/ONTOLOGY_REGISTRY.json"
+    },
+    "knowledge_graph": {
+      "required": true,
+      "purpose": "Structured entity and relationship representation"
+    },
+    "human_oversight": {
+      "required": true,
+      "required_for": [
+        "therapeutic interpretation",
+        "candidate prioritization",
+        "clinical interpretation",
+        "experimental decisions",
+        "safety conclusions",
+        "patient stratification"
+      ]
+    },
+    "reproducibility": {
+      "required": true,
+      "metadata": [
+        "project_version",
+        "agent_version",
+        "software_environment",
+        "configuration",
+        "data_evidence_provenance",
+        "run_identifier",
+        "model_version",
+        "prompt_context_version",
+        "random_seed",
+        "temporal_cutoff",
+        "evaluation_dataset",
+        "git_commit",
+        "result",
+        "interpretation",
+        "limitations"
+      ]
+    }
+  },
+  "agents": [
+    {
+      "agent_id": "AG-DIS-001",
+      "agent_name": "Disease Biology Agent",
+      "purpose": "Analyze disease biology, mechanisms, disease states, disease-stage context, and biological evidence relevant to drug discovery and development.",
+      "scope": [
+        "disease mechanisms",
+        "disease biology",
+        "disease states",
+        "disease stage",
+        "pathways",
+        "cellular context",
+        "human biological evidence"
+      ],
+      "primary_inputs": [
+        "disease entities",
+        "genes",
+        "proteins",
+        "pathways",
+        "multi-omics evidence",
+        "human evidence",
+        "retrieved evidence"
+      ],
+      "required_evidence": [
+        "evidence level",
+        "source reference",
+        "temporal context",
+        "supporting evidence",
+        "conflicting evidence"
+      ],
+      "primary_outputs": [
+        "disease biology findings",
+        "mechanistic interpretations",
+        "evidence conflicts",
+        "uncertainty",
+        "Biology Deficits"
+      ],
+      "biology_deficit_interface": {
+        "enabled": true,
+        "required_when": [
+          "evidence is missing",
+          "evidence conflicts",
+          "evidence is weak",
+          "evidence is uncertain",
+          "claim is unsupported",
+          "mechanism remains unresolved"
+        ]
+      }
+    },
+    {
+      "agent_id": "AG-TGT-001",
+      "agent_name": "Target Intelligence Agent",
+      "purpose": "Evaluate target-related biological evidence, target validity, human relevance, mechanistic support, and unresolved target uncertainties.",
+      "scope": [
+        "target validity",
+        "target biology",
+        "human genetics",
+        "human evidence",
+        "druggability",
+        "mechanistic support"
+      ],
+      "primary_inputs": [
+        "targets",
+        "genes",
+        "proteins",
+        "disease biology",
+        "human evidence",
+        "multi-omics evidence"
+      ],
+      "required_evidence": [
+        "target evidence",
+        "human evidence",
+        "evidence level",
+        "supporting evidence",
+        "conflicting evidence"
+      ],
+      "primary_outputs": [
+        "target intelligence",
+        "target evidence assessment",
+        "uncertainty",
+        "Biology Deficits",
+        "information needs"
+      ],
+      "biology_deficit_interface": {
+        "enabled": true,
+        "required_when": [
+          "evidence is missing",
+          "evidence conflicts",
+          "evidence is weak",
+          "evidence is uncertain",
+          "claim is unsupported",
+          "mechanism remains unresolved"
+        ]
+      }
+    },
+    {
+      "agent_id": "AG-OMX-001",
+      "agent_name": "Multi-Omics & Bimodality Agent",
+      "purpose": "Integrate multi-omics evidence and characterize bimodality across biological context, cell type, tissue, disease stage, patient subgroup, and molecular state.",
+      "scope": [
+        "genomics",
+        "transcriptomics",
+        "proteomics",
+        "metabolomics",
+        "epigenomics",
+        "single-cell biology",
+        "spatial biology",
+        "bimodality"
+      ],
+      "primary_inputs": [
+        "multi-omics datasets",
+        "omics observations",
+        "cell types",
+        "tissues",
+        "disease stages",
+        "patient subgroups",
+        "molecular states"
+      ],
+      "required_evidence": [
+        "data provenance",
+        "evidence level",
+        "temporal context",
+        "biological context",
+        "uncertainty"
+      ],
+      "primary_outputs": [
+        "multi-omics findings",
+        "bimodality characterization",
+        "subgroup signals",
+        "uncertainty",
+        "Biology Deficits"
+      ],
+      "biology_deficit_interface": {
+        "enabled": true,
+        "required_when": [
+          "evidence is missing",
+          "evidence conflicts",
+          "evidence is weak",
+          "evidence is uncertain",
+          "claim is unsupported",
+          "mechanism remains unresolved"
+        ]
+      }
+    },
+    {
+      "agent_id": "AG-STB-001",
+      "agent_name": "Structure & Binding Agent",
+      "purpose": "Analyze molecular structure, target interaction, binding evidence, target engagement, and limitations while explicitly separating binding from efficacy.",
+      "scope": [
+        "molecular structure",
+        "binding",
+        "target interaction",
+        "target engagement",
+        "structure-based evidence"
+      ],
+      "primary_inputs": [
+        "targets",
+        "proteins",
+        "molecular structures",
+        "binding evidence",
+        "computational predictions",
+        "biochemical evidence"
+      ],
+      "required_evidence": [
+        "binding evidence",
+        "evidence level",
+        "source provenance",
+        "model limitations",
+        "uncertainty"
+      ],
+      "primary_outputs": [
+        "binding findings",
+        "target engagement interpretation",
+        "binding uncertainty",
+        "conflicting evidence",
+        "Biology Deficits"
+      ],
+      "biology_deficit_interface": {
+        "enabled": true,
+        "required_when": [
+          "evidence is missing",
+          "evidence conflicts",
+          "evidence is weak",
+          "evidence is uncertain",
+          "claim is unsupported",
+          "mechanism remains unresolved"
+        ]
+      }
+    },
+    {
+      "agent_id": "AG-EFF-001",
+      "agent_name": "Efficacy & Translational Agent",
+      "purpose": "Analyze the progression from target engagement through pathway modulation, cellular response, disease phenotype, and therapeutic effect, while assessing translational uncertainty.",
+      "scope": [
+        "target engagement",
+        "pathway modulation",
+        "cellular response",
+        "disease phenotype",
+        "therapeutic effect",
+        "translation"
+      ],
+      "primary_inputs": [
+        "binding evidence",
+        "target engagement",
+        "pathway evidence",
+        "cellular evidence",
+        "animal evidence",
+        "human evidence"
+      ],
+      "required_evidence": [
+        "efficacy evidence",
+        "evidence level",
+        "translational evidence",
+        "conflicting evidence",
+        "uncertainty"
+      ],
+      "primary_outputs": [
+        "efficacy findings",
+        "translational assessment",
+        "evidence conflicts",
+        "uncertainty",
+        "Biology Deficits"
+      ],
+      "biology_deficit_interface": {
+        "enabled": true,
+        "required_when": [
+          "evidence is missing",
+          "evidence conflicts",
+          "evidence is weak",
+          "evidence is uncertain",
+          "claim is unsupported",
+          "mechanism remains unresolved"
+        ]
+      }
+    },
+    {
+      "agent_id": "AG-ADS-001",
+      "agent_name": "ADMET & Safety Agent",
+      "purpose": "Analyze absorption, distribution, metabolism, excretion, toxicity, safety evidence, liabilities, and unresolved safety uncertainties.",
+      "scope": [
+        "ADME",
+        "pharmacokinetics",
+        "toxicity",
+        "safety",
+        "off-target liabilities",
+        "preclinical safety"
+      ],
+      "primary_inputs": [
+        "drug candidates",
+        "molecular structures",
+        "ADMET evidence",
+        "toxicity evidence",
+        "preclinical evidence",
+        "clinical safety evidence"
+      ],
+      "required_evidence": [
+        "safety evidence",
+        "evidence level",
+        "source provenance",
+        "limitations",
+        "uncertainty"
+      ],
+      "primary_outputs": [
+        "ADMET findings",
+        "safety findings",
+        "safety liabilities",
+        "uncertainty",
+        "Biology Deficits"
+      ],
+      "biology_deficit_interface": {
+        "enabled": true,
+        "required_when": [
+          "evidence is missing",
+          "evidence conflicts",
+          "evidence is weak",
+          "evidence is uncertain",
+          "claim is unsupported",
+          "mechanism remains unresolved"
+        ]
+      }
+    },
+    {
+      "agent_id": "AG-CIN-001",
+      "agent_name": "Clinical Intelligence Agent",
+      "purpose": "Analyze clinical development evidence, clinical trial findings, failure signals, biomarkers, patient stratification, disease stage, and translational lessons.",
+      "scope": [
+        "clinical trials",
+        "clinical evidence",
+        "trial outcomes",
+        "biomarkers",
+        "patient stratification",
+        "disease stage",
+        "clinical translation"
+      ],
+      "primary_inputs": [
+        "clinical trials",
+        "clinical evidence",
+        "drug candidates",
+        "biomarkers",
+        "patient subgroups",
+        "disease stages"
+      ],
+      "required_evidence": [
+        "clinical evidence",
+        "trial provenance",
+        "evidence level",
+        "temporal context",
+        "conflicting evidence"
+      ],
+      "primary_outputs": [
+        "clinical intelligence",
+        "trial lessons",
+        "translational risks",
+        "uncertainty",
+        "Biology Deficits"
+      ],
+      "biology_deficit_interface": {
+        "enabled": true,
+        "required_when": [
+          "evidence is missing",
+          "evidence conflicts",
+          "evidence is weak",
+          "evidence is uncertain",
+          "claim is unsupported",
+          "mechanism remains unresolved"
+        ]
+      }
+    },
+    {
+      "agent_id": "AG-BD-001",
+      "agent_name": "Biology Deficit Agent",
+      "purpose": "Identify, characterize, prioritize, and resolve unresolved biological knowledge deficits that could contribute to drug discovery or development failure.",
+      "scope": [
+        "missing evidence",
+        "conflicting evidence",
+        "weak evidence",
+        "uncertain evidence",
+        "unsupported claims",
+        "mechanistically unresolved biology",
+        "information gain"
+      ],
+      "primary_inputs": [
+        "outputs from core agents",
+        "evidence conflicts",
+        "uncertainty",
+        "ontology entities",
+        "knowledge graph relationships",
+        "RAG evidence"
+      ],
+      "required_evidence": [
+        "evidence level",
+        "supporting evidence",
+        "conflicting evidence",
+        "uncertainty",
+        "provenance"
+      ],
+      "primary_outputs": [
+        "Biology Deficits",
+        "deficit classification",
+        "information needs",
+        "highest-information next steps",
+        "experimental information requirements"
+      ],
+      "biology_deficit_interface": {
+        "enabled": true,
+        "required_when": [
+          "evidence is missing",
+          "evidence conflicts",
+          "evidence is weak",
+          "evidence is uncertain",
+          "claim is unsupported",
+          "mechanism remains unresolved"
+        ]
+      }
+    }
+  ],
+  "non_goals": [
+    "autonomous therapeutic decision making",
+    "clinical recommendations",
+    "autonomous wet-lab execution",
+    "premature final candidate ranking",
+    "production deployment",
+    "unvalidated clinical claims"
+  ]
+}

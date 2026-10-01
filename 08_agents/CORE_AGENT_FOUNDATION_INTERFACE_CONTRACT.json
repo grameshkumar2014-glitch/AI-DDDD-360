@@ -1,0 +1,197 @@
+{
+  "artifact": {
+    "name": "AI DDDD 360™ Core Agent Foundation Interface Contract",
+    "version": "0.1.0",
+    "status": "FOUNDATION_CONTRACT",
+    "project": "AI DDDD 360™",
+    "architecture": "disease-agnostic",
+    "role_model_validation": "Parkinson's Disease",
+    "alzheimer_validation_required": false
+  },
+  "platform_principle": "BEFORE YOU INVEST IN THE NEXT EXPERIMENT, KNOW WHAT YOU DON'T KNOW.",
+  "agent_execution_contract": {
+    "input_contract": {
+      "required": [
+        "agent_id",
+        "agent_name",
+        "agent_version",
+        "run_identifier",
+        "task",
+        "context",
+        "evidence",
+        "ontology_context",
+        "knowledge_graph_context",
+        "reproducibility_metadata"
+      ]
+    },
+    "evidence_contract": {
+      "allowed_levels": [
+        "E0",
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7"
+      ],
+      "required_fields": [
+        "source_reference",
+        "retrieval_provenance",
+        "evidence_level",
+        "temporal_context",
+        "limitations",
+        "uncertainty"
+      ],
+      "safety_rule": "The system must never silently treat E1 evidence as equivalent to E6 evidence."
+    },
+    "reasoning_contract": {
+      "required_separation": [
+        "evidence",
+        "interpretation",
+        "inference",
+        "hypothesis",
+        "demonstrated_effect"
+      ],
+      "conflicting_evidence": "must_be_preserved",
+      "uncertainty": "must_be_explicit",
+      "unsupported_assumptions": "must_be_identified",
+      "biological_deficit": "must_be_identified_when_applicable"
+    },
+    "bimodality_binding_efficacy_contract": {
+      "bimodality": [
+        "expression",
+        "cell_type",
+        "tissue",
+        "disease_stage",
+        "patient_subgroup",
+        "molecular_state",
+        "context"
+      ],
+      "binding_is_not_efficacy": true,
+      "efficacy_chain": [
+        "target_engagement",
+        "pathway_modulation",
+        "cellular_response",
+        "disease_phenotype",
+        "therapeutic_effect"
+      ]
+    },
+    "biology_deficit_contract": {
+      "required_states": [
+        "missing",
+        "conflicting",
+        "weak",
+        "uncertain",
+        "unsupported",
+        "mechanistically_unresolved"
+      ],
+      "required_fields": [
+        "deficit_id",
+        "description",
+        "evidence",
+        "evidence_level",
+        "uncertainty",
+        "impact",
+        "information_gap",
+        "recommended_information_gain"
+      ]
+    },
+    "output_contract": {
+      "required": [
+        "agent_id",
+        "agent_name",
+        "agent_version",
+        "run_identifier",
+        "task",
+        "findings",
+        "supporting_evidence",
+        "conflicting_evidence",
+        "evidence_vs_inference",
+        "hypothesis_vs_demonstrated_effect",
+        "uncertainty",
+        "limitations",
+        "biology_deficits",
+        "provenance",
+        "human_oversight",
+        "reproducibility_metadata"
+      ]
+    },
+    "human_oversight_contract": {
+      "required": true,
+      "required_for": [
+        "therapeutic_interpretation",
+        "candidate_prioritization",
+        "clinical_interpretation",
+        "experimental_decisions",
+        "safety_conclusions",
+        "patient_stratification"
+      ],
+      "autonomous_therapeutic_decision": false,
+      "autonomous_clinical_recommendation": false,
+      "autonomous_wet_lab_decision": false
+    },
+    "reproducibility_contract": {
+      "required": [
+        "project_version",
+        "agent_version",
+        "software_environment",
+        "configuration",
+        "data_evidence_provenance",
+        "run_identifier",
+        "model_version",
+        "prompt_context_version",
+        "random_seed",
+        "temporal_cutoff",
+        "evaluation_dataset",
+        "git_commit",
+        "result",
+        "interpretation",
+        "limitations"
+      ]
+    }
+  },
+  "interfaces": {
+    "rag": {
+      "required": true,
+      "preserve_provenance": true
+    },
+    "ontology": {
+      "required": true,
+      "registry": "06_ontology/ONTOLOGY_REGISTRY.json"
+    },
+    "knowledge_graph": {
+      "required": true
+    },
+    "biology_deficit": {
+      "required": true
+    }
+  },
+  "agent_ids": [
+    "AG-DIS-001",
+    "AG-TGT-001",
+    "AG-OMX-001",
+    "AG-STB-001",
+    "AG-EFF-001",
+    "AG-ADS-001",
+    "AG-CIN-001",
+    "AG-BD-001"
+  ],
+  "agent_names": [
+    "Disease Biology Agent",
+    "Target Intelligence Agent",
+    "Multi-Omics & Bimodality Agent",
+    "Structure & Binding Agent",
+    "Efficacy & Translational Agent",
+    "ADMET & Safety Agent",
+    "Clinical Intelligence Agent",
+    "Biology Deficit Agent"
+  ],
+  "implementation_status": {
+    "base_agent_implementation": false,
+    "individual_agent_implementation": false,
+    "langchain": false,
+    "langgraph": false,
+    "langsmith": false
+  }
+}

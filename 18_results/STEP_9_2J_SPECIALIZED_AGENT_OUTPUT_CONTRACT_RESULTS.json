@@ -1,0 +1,99 @@
+{
+  "step": "9.2J",
+  "title": "Specialized Agent Output-Contract Validation",
+  "status": "PASS",
+  "authoritative_contract": {
+    "path": "08_agents/CORE_AGENT_FOUNDATION_INTERFACE_CONTRACT.json",
+    "output_contract_fields": [
+      "agent_id",
+      "agent_name",
+      "agent_version",
+      "run_identifier",
+      "task",
+      "findings",
+      "supporting_evidence",
+      "conflicting_evidence",
+      "evidence_vs_inference",
+      "hypothesis_vs_demonstrated_effect",
+      "uncertainty",
+      "limitations",
+      "biology_deficits",
+      "provenance",
+      "human_oversight",
+      "reproducibility_metadata"
+    ]
+  },
+  "agent_count": 8,
+  "agents": [
+    {
+      "agent_id": "AG-DIS-001",
+      "agent_name": "Disease Biology Agent",
+      "output_contract_compatible": true,
+      "foundation_only": true
+    },
+    {
+      "agent_id": "AG-TGT-001",
+      "agent_name": "Target Intelligence Agent",
+      "output_contract_compatible": true,
+      "foundation_only": true
+    },
+    {
+      "agent_id": "AG-OMX-001",
+      "agent_name": "Multi-Omics & Bimodality Agent",
+      "output_contract_compatible": true,
+      "foundation_only": true
+    },
+    {
+      "agent_id": "AG-STB-001",
+      "agent_name": "Structure & Binding Agent",
+      "output_contract_compatible": true,
+      "foundation_only": true
+    },
+    {
+      "agent_id": "AG-EFF-001",
+      "agent_name": "Efficacy & Translational Agent",
+      "output_contract_compatible": true,
+      "foundation_only": true
+    },
+    {
+      "agent_id": "AG-ADS-001",
+      "agent_name": "ADMET & Safety Agent",
+      "output_contract_compatible": true,
+      "foundation_only": true
+    },
+    {
+      "agent_id": "AG-CIN-001",
+      "agent_name": "Clinical Intelligence Agent",
+      "output_contract_compatible": true,
+      "foundation_only": true
+    },
+    {
+      "agent_id": "AG-BD-001",
+      "agent_name": "Biology Deficit Agent",
+      "output_contract_compatible": true,
+      "foundation_only": true
+    }
+  ],
+  "safety_controls": {
+    "supporting_evidence": true,
+    "conflicting_evidence": true,
+    "evidence_vs_inference": true,
+    "hypothesis_vs_demonstrated_effect": true,
+    "uncertainty": true,
+    "limitations": true,
+    "biology_deficits": true,
+    "provenance": true,
+    "human_oversight": true,
+    "reproducibility_metadata": true
+  },
+  "implementation_status": {
+    "scientific_reasoning": false,
+    "llm": false,
+    "langchain": false,
+    "langgraph": false,
+    "langsmith": false,
+    "external_data": false
+  },
+  "role_model": "Parkinson's Disease",
+  "alzheimer_validation_required": false
+}

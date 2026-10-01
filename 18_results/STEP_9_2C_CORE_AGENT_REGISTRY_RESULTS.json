@@ -1,0 +1,38 @@
+{
+  "step": "9.2C",
+  "title": "Core Agent Registry Specification",
+  "status": "PASS",
+  "timestamp_utc": "2026-10-01T05:22:37.990886+00:00",
+  "registry_file": "/content/drive/MyDrive/AI-DDDD-360/08_agents/CORE_AGENT_REGISTRY.json",
+  "registry_sha256": "ce524ae872368bc830f628cb6bdafd3b5f0ea0fb46ed2a45e1b9c810942f7870",
+  "foundation_specification_sha256": "068ca67376c16c39d13f8f470ae7b7163549c3c025de58ebfc8d43daff877c25",
+  "agent_count": 8,
+  "agent_ids": [
+    "AG-DIS-001",
+    "AG-TGT-001",
+    "AG-OMX-001",
+    "AG-STB-001",
+    "AG-EFF-001",
+    "AG-ADS-001",
+    "AG-CIN-001",
+    "AG-BD-001"
+  ],
+  "agent_names": [
+    "Disease Biology Agent",
+    "Target Intelligence Agent",
+    "Multi-Omics & Bimodality Agent",
+    "Structure & Binding Agent",
+    "Efficacy & Translational Agent",
+    "ADMET & Safety Agent",
+    "Clinical Intelligence Agent",
+    "Biology Deficit Agent"
+  ],
+  "disease_agnostic": true,
+  "parkinson_role_model": true,
+  "alzheimer_validation": false,
+  "implementation_started": false,
+  "langchain_started": false,
+  "langgraph_started": false,
+  "langsmith_started": false,
+  "master_control_modified": false
+}
